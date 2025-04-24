@@ -1,0 +1,5 @@
+{
+  "ProjectOverviewURL": "https://merckkgaadev.launchpad.cfapps.eu10.hana.ondemand.com/lcapHackathon.HackathonLaunchpad-1.0.0/",
+  "DeployedUTCTime": "2025-04-24T15:34:26.251Z",
+  "ApplicationLogURL": "https://logs.cf.eu10.hana.ondemand.com/app/dashboards#/view/Overview?_g=(filters:!((query:(match_phrase:(component_name:Hackathon-srv)))))"
+}
