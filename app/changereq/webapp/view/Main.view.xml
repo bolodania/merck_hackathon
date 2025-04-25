@@ -1,0 +1,80 @@
+<mvc:View controllerName="changereq.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}" class="sapUiResponsivePadding--header">
+        <content>
+            <VBox class="sapUiSmallMargin">
+                <!-- Technical Object Input with Value Help -->
+                <VBox class="sapUiSmallMargin">
+                    <Label text="Technical Object" />
+                    <Input
+                        id="technicalObjectInput"
+                        placeholder="Enter Technical Object"
+                        showValueHelp="true"
+                        valueHelpRequest=".onValueHelpRequest"
+                        value="{path: 'TechnicalObject'}" />
+                </VBox>
+                <VBox class="sapUiSmallMargin">
+                    <Label text="Technical Object Description" />
+                    <Input
+                        id="technicalObjectDescription"
+                        placeholder="Technical Object Description"
+                        value="{path: 'TechnicalObjectDescription'}"
+                        editable="false" />
+                </VBox>
+
+                <!-- Location and Room -->
+                <VBox class="sapUiSmallMargin">
+                    <Label text="Location" />
+                    <Input
+                        id="locationInput"
+                        placeholder="Location"
+                        value="{path: 'Location'}"
+                        editable="false" />
+                </VBox>
+                <VBox class="sapUiSmallMargin">
+                    <Label text="Room" />
+                    <Input
+                        id="roomInput"
+                        placeholder="Room"
+                        value="{path: 'Room'}"
+                        editable="false" />
+                </VBox>
+
+                <!-- Requested For ID -->
+                <VBox class="sapUiSmallMargin">
+                    <Label text="Requested For ID" />
+                    <Input
+                        id="requestedForIdInput"
+                        placeholder="Requested For ID"
+                        value="{path: 'RequestedForId'}" />
+                </VBox>
+
+                <!-- Desired Date of Completion -->
+                <VBox class="sapUiSmallMargin">
+                    <Label text="Desired Date of Completion" />
+                    <DatePicker
+                        id="desiredDatePicker"
+                        placeholder="Desired Date of Completion"
+                        value="{path: 'DesiredDateOfCompletion'}" />
+                </VBox>
+
+                <!-- Free Text Area -->
+                <VBox class="sapUiSmallMargin">
+                    <Label text="Free Text" />
+                    <TextArea
+                        id="freeTextArea"
+                        placeholder="Enter additional information"
+                        value="{path: 'FreeText'}" 
+                        width="80%" />
+                </VBox>
+
+                <!-- Submit Button -->
+                <Toolbar>
+                    <ToolbarSpacer />
+                    <Button id="_IDGenButton" text="Submit1" press=".onSubmit" />
+                </Toolbar>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
