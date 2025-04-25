@@ -1,1 +1,0 @@
-using hackathonSrv as service from '../../srv/service';

@@ -1,5 +1,0 @@
-<mvc:View controllerName="changereq.controller.App"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m" xmlns:upload="sap.m.upload">
-    <App id="app"></App>
-</mvc:View>
